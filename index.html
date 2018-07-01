@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv = " X-UA-compatible " content = " IE = 9, IE = 7, IE = 8, IE = EDGE, Chrome = 1 " >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
+  <link rel="stylesheet" href="css/main.css" />
+  <title>CURRENCY CONVERTER</title>
+</head>
+<body>
+
+    <div class="convertBox">
+ 
+      <h1>CURRENCY CONVERTER</h1>
+  
+  
+  <form>
+    <div class="form-item">
+      <label for="inputFromCountry"><h2>Convert From</h2></label>
+                  <select name="inputFromCountry" class="form-control" id="inputFromCountry">
+                  <option value=''>Select country</option>
+                  </select>
+    </div>
+    <div class="form-item">
+     <label for="inputToCountry"><h2>Convert To</h2></label>
+                  <select name="inputToCountry" class="form-control" id="inputToCountry">
+                  <option value=''>Select country</option>
+                  </select>
+    </div>
+     <div class="form-item">
+     <label for="inputFromAmount"><h4>Amount</h4></label>
+                  <div class="row">
+                  <div class="col-xs-6 col-sm-6 col-md-6">
+                    <div class="form-item">
+                     <input min="0" value = "0" name="inputFromAmount" type="number" class="form-control" id="inputFromAmount" placeholder="Amount in number">
+    </div>
+  </div>
+  <div class="form-item">
+     <label for="inputToAmount"><h4>Converted Amount</h4></label>
+     <div class="row">
+     <div class="col-xs-6 col-sm-6 col-md-6">
+        <div class="form-item">
+            <input min="0" value="0" name="inputToAmount" type="number" class="form-control" id="inputToAmount" placeholder="Amount in number" disabled>
+               </div>
+                 </div>
+                   </div>
+
+  </form><br>
+  </div>
+
+      <div class="row"><h3 class="text-error" id="error-message"></h3></div>
+      <div class="row"><h3 class="text-info" id="message"></h3></div>
+      <div class="row"><h3 class="text-success" id="success-message"></h3></div>
+
+  <script src="js/sw.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
